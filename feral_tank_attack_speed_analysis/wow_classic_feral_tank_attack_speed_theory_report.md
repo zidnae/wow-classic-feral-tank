@@ -95,7 +95,7 @@ nervously pacing around at range. Two warriors will be able to Charge one anothe
 > ### Auto attacks
 > When you're auto attacking a target the combat log will show you a `SWING_DAMAGE` message if you hit the target or a `SWING_MISSED` message if you missed or were avoided at the interval of your swing speed, i.e. if you're using a 3.6 speed weapon then these messages will show up every 3.6 seconds. But these messages are only one part of the equation; they signal when the attack table roll happens and damage calculations are performed but the actual damage of your auto attack is not applied to the target until the next batch is processed by the server. When this happens, and advanced combat logging is enabled in the client, the combat log will show a `SWING_DAMAGE_LANDED` message signaling the actual application of the damage on the target. Example (edited for brevity):
 >
->```
+```
 6/8 11:38:15.866  SWING_DAMAGE (Glance for 125)
 6/8 11:38:15.967  SWING_DAMAGE_LANDED (Glance for 125)
 6/8 11:38:19.480  SWING_DAMAGE (Glance for 107)
